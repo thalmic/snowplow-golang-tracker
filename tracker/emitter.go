@@ -90,7 +90,7 @@ func InitEmitter(options ...func(*Emitter)) *Emitter {
 
 	// Setup default event storage
 	if e.Storage == nil {
-		e.Storage = *InitStorageSQLite3(e.DbName)
+		e.Storage = *InitStorageMemory()
 	}
 
 	// Setup HttpClient
