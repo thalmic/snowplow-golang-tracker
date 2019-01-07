@@ -1,4 +1,6 @@
 // +build sqlite
+// SqlLite requires a number of dependencies that we don't want to have to deal with
+// if we are building a from scratch docker container. As such, we put it behind a build tag
 
 package tracker
 
