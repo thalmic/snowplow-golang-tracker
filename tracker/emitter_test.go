@@ -70,7 +70,7 @@ func TestEmitterInit(t *testing.T) {
 	assert.Nil(emitter.Callback)
 	assert.NotNil(emitter.HttpClient)
 	assert.NotNil(emitter.Storage)
-	assert.Equal("tracker.StorageSQLite3", reflect.TypeOf(emitter.Storage).String())
+	assert.Equal("tracker.StorageMemory", reflect.TypeOf(emitter.Storage).String())
 
 	// Assert the set functions
 	emitter.SetCollectorUri("com.snplow")
